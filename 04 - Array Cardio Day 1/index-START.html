@@ -57,6 +57,13 @@
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
+    const totals = inventors.map(inventor => inventor.passed - inventor.year);
+    function sum(total, num) {
+      return total + num;
+    }
+
+    totes = totals.reduce(sum, 0);
+    console.log(totes);
 
 
     // 5. Sort the inventors by years lived
